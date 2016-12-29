@@ -4,7 +4,6 @@ class BlogsController < ApplicationController
 
   def index
     @blogs = Blog.all
-    @user = current_user.name
   end
 
   def new
