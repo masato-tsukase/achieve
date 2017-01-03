@@ -16,7 +16,7 @@ class NoticeMailer < ApplicationMailer
     @contact = contact
 
     mail to: "masax0408@yahoo.co.jp",
-         subject: '【Achieve】お問い合わせがありました'
+         subject: '【Achieve】お問い合わせ完了'
   end
 
 end

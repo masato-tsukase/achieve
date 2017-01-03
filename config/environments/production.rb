@@ -78,7 +78,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 end
 
-config.action_mailer.default_url_options = { host: https://masax0408.herokuapp.com/ }
+config.action_mailer.default_url_options = { host: 'masax0408@yahoo.co.jp' }
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings =
 {
