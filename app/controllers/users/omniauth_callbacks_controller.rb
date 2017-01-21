@@ -9,6 +9,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
      session["devise.facebook_data"] = request.env["omniauth.auth"]
      redirect_to new_user_registration_url
    end
+  end
 
    def twitter
     # You need to implement the method below in your model
@@ -21,6 +22,5 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       session["devise.twitter_data"] = request.env["omniauth.auth"].except("extra")
       redirect_to new_user_registration_url
     end
-  end
   end
 end

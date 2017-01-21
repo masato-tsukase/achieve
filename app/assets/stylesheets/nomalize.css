@@ -156,7 +156,7 @@ h1 {
 /**
  * Add the correct background and color in IE 9-.
  */
- 
+
  mark {
   background-color: #ff0;
   color: #000;
@@ -410,4 +410,9 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }
