@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   resources :poems, only: [:index, :show]
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  
-  resources :blogs, only: [:index, :new, :create, :edit, :update, :destroy] do
+
+  resources :blogs do
+    resources :comments
+
     collection do
       post :confirm
     end
