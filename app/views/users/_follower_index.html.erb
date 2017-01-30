@@ -1,8 +1,8 @@
 <div class="container">
-  <% @followeds.each do |followed| %>
+  <% @followers.each do |follower| %>
       <div class="container-child col-md-2 col-sm-4 col-xs-6 ">
-        <%= profile_img(followed) %>
-        <%= followed.email %>
+        <%= profile_img(follower) %>
+        <%= follower.email %>
       </div>
   <% end %>
 </div>
