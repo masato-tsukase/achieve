@@ -1,0 +1,6 @@
+<div class="container">
+  <h4><%= @user.email %>さんがフォローしているユーザー一覧</h4>
+      <%= render partial: 'users/followed_index', locals: { followeds: @followeds } %>
+  <h4><%= @user.email %>さんのフォロワー一覧</h4>
+      <%= render partial: 'users/follower_index', locals: { followers: @followers } %>
+</div>
