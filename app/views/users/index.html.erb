@@ -6,7 +6,9 @@
         <%= link_to user_path(user) do %>
         <%= user.email %>
         <% end %>
+        <% unless current_user.id == user.id %>
         <%= render 'follow_form', user: user %>
+        <% end %>
       </div>
   <% end %>
 </div>
