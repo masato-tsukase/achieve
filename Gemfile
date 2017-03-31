@@ -39,7 +39,6 @@ group :development, :test do
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -52,6 +51,9 @@ group :development, :test do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano3-unicorn'
+
+  gem "rspec-rails"
+  gem "factory_girl_rails"
 end
 
 gem 'twitter-bootstrap-rails'
@@ -66,6 +68,10 @@ gem 'faker'
 
 group :development do
   gem 'letter_opener_web'
+end
+
+group :development do
+  gem 'web-console', '~> 2.0'
 end
 
 gem 'rails_admin'
@@ -88,3 +94,10 @@ gem 'dotenv-rails'
 
 
 gem 'unicorn'
+
+group :test do
+  gem "capybara"
+  gem "database_cleaner"
+  gem "launchy"
+  gem "selenium-webdriver"
+end
